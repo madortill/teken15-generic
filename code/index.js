@@ -1,58 +1,95 @@
 // כששמים שמות של נושאים לשים בין מילים מקף! שלא יהיה רווחים בכלל, זה יצור לבד רווחים במקום המתאים
 let objInfo = {
     // נושא1-----------------------------------------------------------------------------------------------------------------------
-    "נושא-1" : {
-        pic : `../assets/images/grapics/home-page/antiallergic-button.svg`,
-        color : `pink`,
+    // "נושא-1" : {
+    //     pic : `../assets/images/grapics/home-page/antiallergic-button.svg`,
+    //     color : `pink`,
+    //     "נושא רמה 2": {
+    //         // תוכן לפי כותרת ופסקה
+    //         content: {
+    //             "title": "par1",
+    //             "title2": "par2"
+    //         },
+    //         subSubjects: {
+    //             "תת-נושא1" : {
+    //                 description : `כאן יכנס תיאור של תת נושא 1 שמתאר את כול תתי הנושאים שלו`,
+    //                 "תת-תת-נושא-פסקאות" : {
+    //                     type : "text",
+    //                     content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+    //                 },
+    //             },
+    //             "תת-נושא2" : {
+    //                 description : ``,
+    //                 "תת-תת-נושא-רשימה-נקודות" : {
+    //                     type : "listDots",
+    //                     content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+    //                 },
+    //                 "תת-תת-נושא-רשימה-מספרים" : {
+    //                     type : "listNumbers",
+    //                     content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+    //                 },
+    //                 "תת-תת-נושא-רשימה-" : {
+    //                     type : "listNumbers",
+    //                     content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+    //                 },
+    //             },
+    //         }
+    //     }
 
-        "תת-נושא1" : {
-            discription : `כאן יכנס תיאור של תת נושא 1 שמתאר את כול תתי הנושאים שלו`,
-            "תת-תת-נושא-פסקאות" : {
-                type : "text",
-                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
-            },
-        },
-        "תת-נושא2" : {
-            discription : ``,
-            "תת-תת-נושא-רשימה-נקודות" : {
-                type : "listDots",
-                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
-            },
-            "תת-תת-נושא-רשימה-מספרים" : {
-                type : "listNumbers",
-                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
-            },
-            "תת-תת-נושא-רשימה-" : {
-                type : "listNumbers",
-                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
-            },
-        },
-    },
+    // },
     // נושא2-----------------------------------------------------------------------------------------------------------------------
     "נושא-2" : {
         pic : `../assets/images/grapics/home-page/chronic-diseases-button.svg`,
-        color : `mediumaquamarine`,
+        color : `blue`,
         
         "תת-נושא-1" : {
-            discription : ``,
+            description: "שלום לכם ילדים וילדות אני יובל המבלולבל כל היו םאני עושה שטויות לא בכוונה בכלל. את החולצה אני לובש מהרגליים ומכנסיים מהראש. כששואלים אותי כמה זה שתיים ועוד שתיים אז אני אומר שלוש",
             "תת-תת-נושא-תמונה" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
                 type : "textAndPic",
                 pic : `../assets/images/grapics/home-page/example1.jfif`,
                 content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
             },
-            discription : ``,
             "תת-תת-נושא-תמונות" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
                 type : "textAndPics",
                 pic : [`../assets/images/grapics/home-page/example1.jfif`, `../assets/images/grapics/home-page/example2.jfif`,],
                 content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
             },
             "תת-תת-נושא-סרטון" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
                 type : "textAndVideo",
                 video : `https://www.youtube.com/embed/mqSp2XCo7DE`,
                 content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
-                content: "",
             },
+            "תת-תת-נושא-תמונה-גדולה" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
+                type: 'largePic',
+                pic : [`../assets/images/grapics/home-page/example1.jfif`],
+                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"],
+            }   
         },
+        "תת-נושא-2" : {
+            description: "hsghs",
+            "תת-תת-נושא-תמונה" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
+                type : "textAndPic",
+                pic : `../assets/images/grapics/home-page/example1.jfif`,
+                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+            },
+            "תת-תת-נושא-תמונות" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
+                type : "textAndPics",
+                pic : [`../assets/images/grapics/home-page/example1.jfif`, `../assets/images/grapics/home-page/example2.jfif`,],
+                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+            },
+            "תת-תת-נושא-סרטון" : {
+                descriptionPicture: '../assets/images/grapics/home-page/example1.jfif',
+                type : "textAndVideo",
+                video : `https://www.youtube.com/embed/mqSp2XCo7DE`,
+                content: ["פסקה ראשונה", "פסקה שניה", "פסקה שלישית"], // מערך של תוכן לפי פסקאות
+            },
+        }
     },
 }
 
@@ -62,6 +99,10 @@ let strMedTypeFromSearch;
 let strcurrentPage = "homePage";
 let bSearchScreen = false;
 let QUESTIONS = [];
+let strCurrentMed;
+let strCurrentSubSubject;
+let objCurrentMed;
+let picinSubSubject;
 
 // const
 const HEADLINE = "שם לומדה";
@@ -75,6 +116,17 @@ window.addEventListener("load", () => {
     document.querySelector('.searchButton').addEventListener('click', onClickSearch);
     document.querySelector('.aboutButton').addEventListener('click', onClickAbout);
     createHomePageButtons();
+
+    var theme = document.getElementsByTagName('link')[0];
+    var theme2 = document.getElementsByTagName("link")[1];
+
+    if (screen.height > screen.width) {
+        theme.setAttribute("href", "indexPad.css");
+        theme2.setAttribute("href", "practicePad.css");
+    } else {
+        theme.setAttribute("href", "indexComp.css");
+        theme2.setAttribute("href", "practiceComp.css");
+    }
 });
 
 /* createHomePageButtons
@@ -212,7 +264,7 @@ const onSearch = () => {
         for(let subSubject of Object.keys(objInfo[subject])){
             for(let key of Object.keys(objInfo[subject][subSubject])){
                 //Push the current match to it.
-                if(key.includes(strUserInput) && strUserInput !== "" && key !== "discription"){
+                if(key.includes(strUserInput) && strUserInput !== "" && key !== "description"){
                     let div = document.createElement("div");
                     div.innerHTML = addSpace(key);
                     div.classList.add("dropDownItem", key, subSubject, subject);
@@ -230,9 +282,10 @@ const onSearch = () => {
 Description: Shows medicine id, hides privios div and adds listener to retern button*/
 const creatMedID = (event) => {
     // שומר את התת תת נושא הנוכחי ואת האובייקט שלו
-    let strCurrentMed =  event.currentTarget.classList[1];
-    let strCurrentSubSubject = event.currentTarget.classList[2];
-    let objCurrentMed =  objInfo[event.currentTarget.classList[3]][strCurrentSubSubject][strCurrentMed];
+    strCurrentMed =  event.currentTarget.classList[1];
+    strCurrentSubSubject = event.currentTarget.classList[2];
+    objCurrentMed =  objInfo[event.currentTarget.classList[3]][strCurrentSubSubject][strCurrentMed];
+
     // מראה את הדיב של התת תת נושא
     document.querySelector(`.medicineId`).classList.remove("hidden");
     // משנה מסך בהתאם למסך ממנו באנו
@@ -288,7 +341,7 @@ const creatMedID = (event) => {
         document.querySelector('.topButton').addEventListener("click", sendToHomePage);
     }
     // שומר את העמוד הנוכחי
-    strcurrentPage = "medId"
+    strcurrentPage = "medId";
 }
 
 /* insertInfoToId
@@ -334,6 +387,13 @@ const insertInfoToId = (objCurrentMed, strCurrentMed) => {
             }
             document.querySelector(`.youtubeVideo`).setAttribute("src", objCurrentMed.video); 
             break;
+        case 'largePic':
+            for (let i = 0; i < objCurrentMed.pic.length; i ++) {
+                let parah = El("img", {cls : "largePicId", attributes : {src : objCurrentMed.pic[i]}});
+                document.querySelector(`.idPicContainer`).append(parah); 
+            }
+            document.querySelector(`.idPicContainer`).setAttribute("src", objCurrentMed.pic); 
+            break;
         default: console.log("default");
     }
 
@@ -364,7 +424,7 @@ const creatMedShelfs = (event) => {
         }
     } else if (strcurrentPage === "homePage") {
         // שומר את סוג התרופות ומעלים מסך בית
-        strCurrentSubject = event.currentTarget.classList[1]
+        strCurrentSubject = event.currentTarget.classList[1];
         document.querySelector('.homePageButtons').classList.add("hidden");
         document.querySelector('.aboutButton').classList.add("hidden");
     } else if (strcurrentPage === "practicePage") {
@@ -397,39 +457,44 @@ const creatMedShelfs = (event) => {
     // משנה כותרת
     document.querySelector(`.title`).innerHTML = addSpace(strCurrentSubject);
     document.querySelector(`.title`).classList.add("titleMedShelfs");
+
     // יוצר קונטיינר למדפים
     let shelfContent = El("div", {classes : [`${strCurrentSubject}Shelf`, "medShelf"]},
     El("img", {attributes: {src: objInfo[strCurrentSubject].pic , class: "medTypeSymbol"}}),
     El("div", {classes : [`${strCurrentSubject}ShelfContainer`, "medShelfContainer"]})
-        );
+    );
     document.querySelector(`.shelfsPage`).append(shelfContent);
     // שומר אינדקס למדפים ויוצר מדפים לפי מספר תתי הנושאים
     let index = 1;
     for(let key of Object.keys(objInfo[strCurrentSubject])) {
         if(key !== "pic" && key !== "color"){
-            // let shelf = El("div", {classes : [`shelfs`, `shelf${index}`], listeners : {click : controlShelfsDropDown}},
-            //     El("div", {cls : `shelfHedline`},
-            //         addSpace(key),
-            //         El("img", {attributes : {src: `../assets/images/grapics/med-shelfs/down-button.svg`}, classes : ["downButton", objInfo[strCurrentSubject].color]})
-            //     ),
-            //     El("img", {attributes : {src: `../assets/images/grapics/med-shelfs/shelf.svg`}, classes : ["shelf", objInfo[strCurrentSubject].color]})
-            // );
-            // document.querySelector(`.${strCurrentSubject}Shelf`).append(shelf);
-            
-            // let shelfDropDown = El("div", {classes : [`shelf${index}dropDown`, `shelfsdropDown`, `hidden`]},
-            // El("div", {cls : `shelfDiscriptionSection`}),
-            // El("div", {cls : `shelfPicSection`}),
-            // );
-            // document.querySelector(`.${strCurrentSubject}Shelf`).append(shelfDropDown);
+            let shelf = El("div", {classes : [`shelfs`, `shelf${index}`], listeners : {click : controlShelfsDropDown}},
+                El("div", {cls : `shelfHedline`},
+                    addSpace(key),
+                    El("img", {attributes : {src: `../assets/images/grapics/med-shelfs/down-button.svg`}, classes : ["downButton", objInfo[strCurrentSubject].color]})
+                ),
+                El("img", {attributes : {src: `../assets/images/grapics/med-shelfs/shelf.svg`}, classes : ["shelf", objInfo[strCurrentSubject].color]})
+            );
+            document.querySelector(`.${strCurrentSubject}Shelf`).append(shelf);
+            let shelfDropDown = El("div", {classes : [`shelf${index}dropDown`, `shelfsdropDown`, `hidden`]},
+            El("div", {cls : `shelfdescriptionSection`}),
+            El("div", {cls : `${strCurrentSubject}shelfPicSection`}),
+            );
+            document.querySelector(`.${strCurrentSubject}Shelf`).append(shelfDropDown);
             for(let subSubject of Object.keys(objInfo[strCurrentSubject][key])) {
-                if(subSubject !== "discription"){
+                if(subSubject !== "description") {
+                    let dropContainer = El ("div", {classes: [`drop-container${index}`, `drop-container`]});
+                    console.log(dropContainer);
                     let dropDownPic = El("div", {classes : [`shelfMedPicContainer`, subSubject, key, strCurrentSubject], listeners : {click : creatMedID}},
-                    // El("img", {attributes : {src: `../assets/images/grapics/med-shelfs/down-button.svg`}, classes : ["shelfMedPic"]}),
+                    El("img", {attributes : {src: objInfo[strCurrentSubject][key][subSubject].descriptionPicture}, classes : ["shelfMedPic"]}),
                     addSpace(subSubject),
                     );
-                    document.querySelector(`.${strCurrentSubject}ShelfContainer`).append(dropDownPic);
+                    document.querySelector(`.shelf${index}dropDown`).append(dropContainer);
+                    document.querySelector(`.drop-container${index}`).append(dropDownPic);
                 } else {
-                    document.querySelector(`.${strCurrentSubject}ShelfContainer`).append(objInfo[strCurrentSubject][key].discription);                    
+                    let descriptionEl = El("div", {classes : ["description", "sub-titles"]});
+                    descriptionEl.innerHTML += objInfo[strCurrentSubject][key].description; 
+                    document.querySelector(`.shelf${index}dropDown`).append(descriptionEl);                    
                 }
             }
             index++;

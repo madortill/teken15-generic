@@ -7,8 +7,8 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>שם הלומדה</title>
     <!-- stylesheet links -->
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="practice.css">
+    <link rel="stylesheet" type="text/css" href="indexPad.css">
+    <link rel="stylesheet" type="text/css" href="practicePad.css">
     <!-- javascript links -->
     <script type="text/javascript" src="practice.js"></script>
     <script type="text/javascript" src="index.js"></script>
@@ -23,7 +23,7 @@
     </div>
     <!-- opening -->
     <div class="header">
-        <img class="wave blue" src="../assets/images/grapics/home-page/opening-wave.svg" alt="wave">
+        <img class="wave blue computer" src="../assets/images/grapics/home-page/opening-wave.svg" alt="wave">
         <div class="titleConeiner"><span class="title">שם לומדה</span></div>
         <img class="topButton searchButton blue" src="../assets/images/grapics/home-page/search-button.svg" alt="searchButton">
         <img class="aboutButton" src="../assets/images/grapics/about/about-symbol.svg" alt="about-button">
@@ -58,15 +58,15 @@
     </div>
     <!-- shelfs -->
     <div class="shelfsPage">
-
+        <div class="descriptionContainer"></div>
+        <div class="dropContainer"></div>
     </div>
     <div class="shelfsButtons hidden">
         <img class="homeButton" src="../assets/images/grapics/med-shelfs/home-button.svg">
         <img class="practiceButton buttons" src="../assets/images/grapics/med-shelfs/practice-button.svg">
     </div>
     <!-- medicine id -->
-    <div class="medicineId">
-    </div>
+    <div class="medicineId"></div>
     <template class="text">
         <div class="sub-titles"></div>
         <div class="content"></div>
@@ -94,12 +94,19 @@
         <iframe width="100%" class="youtubeVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="content"></div>
     </template>
+    <template class="largePic">
+        <div class="sub-titles"></div>
+        <div class="content"></div>
+        <div class="idPicContainer"></div>
+    </template>
     <!-- practice -->
-    <div class="practicePage hidden">
+    <div class="practicePage hidden flex">
         <div class="prcticeQuestionContainer">
             <img class="practiceCharacter" src="../assets/images/grapics/practice/character.svg">
-            <img class="practiceQuestionBobble" src="../assets/images/grapics/practice/speach-bobble.svg">
-            <div class="question">שאלה על תרופה שיש בה די הרבה מלל אבל לא המון כי השאלות לא כזה ארוכות</div>
+            <div class="flexTwo">
+                <img class="practiceQuestionBobble" src="../assets/images/grapics/practice/speach-bobble.svg">
+                <div class="question">שאלה על תרופה שיש בה די הרבה מלל אבל לא המון כי השאלות לא כזה ארוכות</div>
+            </div>
             <div class="answersContainer">
                 <div class="ans ans1">
                     <img class="practiceQuestionSqure practiceQuestionSqure1" src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
@@ -137,10 +144,12 @@
     </div>
     <!-- exam -->
     <div class="examPage hidden">
-        <div class="beforeExamPage hidden">
+        <div class="beforeExamPage hidden flex">
             <div class="beforeExamInstractions">אתם תעברו עכשיו מבחן על החומר שלמדתם בלומדה, המבחן עם ציון אז וודאו שאתם מרגישים מוכנים. המבחן מכיל 15 שאלות אמריקאיות</div>
-            <img class="examCharacter" src="../assets/images/grapics/practice/character.svg">
-            <div class="beforeExamBobble">לפני שנתחיל במבחן כדאי שאדע איך קוראים לכם. הכניסו את שמכם המלא החלונית למטה ולחצו על הכפתור כדי להתחיל במבחן</div>
+            <div class="flexTwo">
+                <img class="examCharacter" src="../assets/images/grapics/practice/character.svg">
+                <div class="beforeExamBobble">לפני שנתחיל במבחן כדאי שאדע איך קוראים לכם. הכניסו את שמכם המלא החלונית למטה ולחצו על הכפתור כדי להתחיל במבחן</div>
+            </div>
             <input class="examNameInput"  android:windowSoftInputMode="stateVisible" placeholder="הקלידו כאן שם מלא" name="name" lang="he" type="text" />
             <div class="beforeTestButtonsContainer">
                 <img class="stratTest beforeTestButtons" src="../assets/images/grapics/test/start-test-button.svg">
